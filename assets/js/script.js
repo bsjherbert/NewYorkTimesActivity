@@ -4,10 +4,11 @@
 
 
 $.ajax({
-    url: "https://api.nytimes.com/svc/search/v2/articlesearch.json?begin_date=19890101&end_date=20190101&q=john%20doggle&sort=newest&api-key=6w4Wjqf4AIIU9K23h16tGQ2WiS6GzlqZ",
+    url: "https://api.nytimes.com/svc/search/v2/articlesearch.json?begin_date=19890101&end_date=20190101&q=fires&sort=newest&api-key=6w4Wjqf4AIIU9K23h16tGQ2WiS6GzlqZ",
     method: "GET"
 }).then(function(response){
     console.log(response);
+    console.log(response.response.docs[0].snippet)
 })
 
 // Change the id to match HTML
