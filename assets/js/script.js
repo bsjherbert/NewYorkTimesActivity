@@ -9,6 +9,7 @@ $.ajax({
 }).then(function(response){
     console.log(response);
 })
+
 // Change the id to match HTML
 var search = $("#searchInput").val();
 var startYear = $("#startYear").val();
