@@ -12,38 +12,44 @@
 </head>
 
 <body>
-    <h1 class=" Header1 text-center text-white rounded"><i class="fa fa-newspaper-o  "></i>New York Times Search</h1>
 
     <div class="container">
+        <h1 class=" Header1 text-center text-white rounded shadow-lg p-3 mb-5"><i class="fa fa-newspaper-o"></i>New York Times Search</h1>
         <div class="row">
             <div class="col-12">
-                <form>
-                    <div class="form-title">
-                        <h6>Search Parameters</h6>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Search Term</label>
-                        <input type="email" class="form-control" id="searchInput">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">Number of Records to Retrieve </label>
-                        <select class="form-control" id="searchLimits">
+                <div class="formBorderAll shadow-lg p-3 mb-5 bg-light">
+
+
+
+                    <form>
+
+                        <div class=" formP form-title">
+                            <h6><i class="fas fa-paper-plane"></i>Search Parameters</h6>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Search Term</label>
+                            <input type="email" class="form-control" id="searchInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Number of Records to Retrieve </label>
+                            <select class="form-control" id="searchLimits">
                                     <option>1</option>
                                     <option>5</option>
                                     <option>10</option>
                                     <option>15</option>
                                     <option>20</option>
                                 </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Start Year(Optional)</label>
-                        <input type="email" class="form-control" id="startYear" placeholder="name@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">End Year(Optional)</label>
-                        <input type="email" class="form-control" id="endYear" placeholder="name@example.com">
-                    </div>
-                </form>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Start Year(Optional)</label>
+                            <input type="email" class="form-control" id="startYear" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">End Year(Optional)</label>
+                            <input type="email" class="form-control" id="endYear" placeholder="name@example.com">
+                        </div>
+                    </form>
+                </div>
 
 
             </div>
