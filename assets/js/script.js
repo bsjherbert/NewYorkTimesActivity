@@ -11,8 +11,9 @@ var queryUrl = "https://api.nytimes.com/svc/search/v2/articlesearch.json?begin_d
 
 $("#testbutton").on("click", function (event) {
     event.preventDefault();
+
     $.ajax({
-        url: "https://api.nytimes.com/svc/search/v2/articlesearch.json?begin_date=19890101&end_date=20190101&q=fires&sort=newest&api-key=6w4Wjqf4AIIU9K23h16tGQ2WiS6GzlqZ",
+        url: queryUrl,
         method: "GET"
     }).then(function (response) {
         console.log(response);
@@ -32,8 +33,12 @@ $("#testbutton").on("click", function (event) {
             newSnippet.append(newSource);
         }
     })
-
+    clearInputs();
 })
+
+function clearInputs () {
+    search.empty()
+}
 
 
 
