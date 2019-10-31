@@ -10,7 +10,10 @@ var numberOfRecords = $("#searchLimits").val();
 var queryUrl = "https://api.nytimes.com/svc/search/v2/articlesearch.json?begin_date=" + startYear + "0101&end_date=" + endYear + "0101&q=" + search + "&sort=newest&api-key=6w4Wjqf4AIIU9K23h16tGQ2WiS6GzlqZ"
 
 $("#testbutton").on("click", function (event) {
+
     event.preventDefault();
+    
+    alert("im a dumber")
     $.ajax({
         url: "https://api.nytimes.com/svc/search/v2/articlesearch.json?begin_date=19890101&end_date=20190101&q=fires&sort=newest&api-key=6w4Wjqf4AIIU9K23h16tGQ2WiS6GzlqZ",
         method: "GET"
@@ -20,7 +23,7 @@ $("#testbutton").on("click", function (event) {
         console.log(response.response.docs[0].source)
         // Convenience variables for the for loop
         var result = response.response
-
+        
         // for loop, going thru the API and using this loop to display the entries
         for (let i = 0; i < numberOfRecords.length; i++) { //this will loop a number of times equal to the numberOfRecords (the input of the user)
             var orderList = $("<ol>");
