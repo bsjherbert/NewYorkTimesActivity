@@ -27,6 +27,10 @@ var queryUrl = "https://api.nytimes.com/svc/search/v2/articlesearch.json?begin_d
 // for loop, going thru the API and using this loop to display the entries
 
 for (let i = 0; i < numberOfRecords.length; i++) { //this will loop a number of times equal to the numberOfRecords (the input of the user)
+    var orderList = $("<ol>");
+    // append orderList to the div when its made
+    var newSnippet = $("<li>").text(result.docs[i].snippet);
     
-    
+    var newSource = $("<small>").text(result.docs[i].source);
+
 }
