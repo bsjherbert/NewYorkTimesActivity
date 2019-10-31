@@ -34,15 +34,10 @@ $("#testbutton").on("click", function (event) {
             newSnippet.append(newSource);
         }
     })
-    clearInputs();
 })
 
-function clearInputs () {
-    $("searchInput").val("")
+$("#clearButton").on("click",  function (event) {
+    event.preventDefault()
+    $("searchInput").empty()
     
-}
-
-
-
-
-
+})
